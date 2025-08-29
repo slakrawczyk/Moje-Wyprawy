@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moje Wyprawy Rowerowe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎥 Moje Wyprawy Rowerowe</h1>
+    <p>Minimalistyczne portfolio filmów</p>
+  </header>
+
+  <main class="gallery">
+    <!-- Wklejasz kolejne filmy -->
+    <div class="video-card" data-video="https://www.youtube.com/embed/ScMzIvxBSi4">
+      <img src="https://img.youtube.com/vi/ScMzIvxBSi4/hqdefault.jpg" alt="Film 1">
+      <h2>Wyprawa w góry</h2>
+    </div>
+
+    <div class="video-card" data-video="https://www.youtube.com/embed/ysz5S6PUM-U">
+      <img src="https://img.youtube.com/vi/ysz5S6PUM-U/hqdefault.jpg" alt="Film 2">
+      <h2>Rowerem przez lasy</h2>
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <iframe id="videoFrame" src="" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
